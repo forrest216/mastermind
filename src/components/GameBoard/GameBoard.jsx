@@ -12,6 +12,8 @@ const GameBoard = (props) => {
                rowIdx={idx}
                currentGuess={idx === props.guesses.length - 1} 
                key={idx}
+               handlePeg={props.handlePeg}
+               submitGuess={props.submitGuess}
             />
          )}
       </div>

@@ -5,8 +5,13 @@ const GuessPeg = (props) => {
    return (
       <div 
          className={styles.peg}
-         style={{backgroundColor: props.color}}   
-      />)   
+         onClick={props.currentGuess ? props.handlePeg : null}
+         style={{
+            backgroundColor: props.color,
+            border: props.color ? `1px solid ${props.color}` : '1px dashed grey',
+            cursor: props.currentGuess && 'pointer'
+         }}
+      />)
 }
  
 export default GuessPeg;

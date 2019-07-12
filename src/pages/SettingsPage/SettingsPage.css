@@ -1,0 +1,43 @@
+.SettingsPage {
+   width: 40px;
+   height: 40px;
+   margin: 5px;
+   border-width: 14px;
+   border-radius: 50%;
+   opacity: 0.85;
+   cursor: pointer;
+}
+
+.diffContainer {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   margin: 10px 0px;
+}
+
+.diffsContainer {
+   display: flex;
+   flex-direction: column;
+   width: 60vw;
+   margin: auto;
+   justify-content: center;
+   margin-bottom: 10px;
+}
+
+.diffContainer .btn {
+   margin-right: 8px;
+}
+
+.borton {
+   width: 90px;
+}
+
+.borton:disabled {
+   border: 2px solid #333;
+}
+
+.cancel {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

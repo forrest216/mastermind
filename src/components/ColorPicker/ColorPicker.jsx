@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './ColorPicker.module.css';
 
+
+
+
 const ColorPicker = (props) => {
    return ( 
       <div className={styles.ColorPicker}>
@@ -12,7 +15,8 @@ const ColorPicker = (props) => {
                style={{
                   borderColor: color,
                   backgroundColor: idx === props.selColorIdx ? 'white' : color           
-            }}
+               }}
+               onClick={() => props.colorSelect(idx)}
             />
             )}
       </div>
